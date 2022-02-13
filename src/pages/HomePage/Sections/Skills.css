@@ -1,0 +1,103 @@
+.skills {
+  position: relative;
+  display: grid;
+
+  min-height: 70vw;
+  background-color: var(--color-gold);
+  overflow: hidden;
+}
+
+.skills__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.skills__container-row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.skills__skill {
+  perspective: 500px;
+}
+
+.skills__skill svg {
+  color: var(--color-white);
+  font-size: 14rem;
+
+  transform: rotateY(0);
+}
+
+.html {
+  animation: rotate 10s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.css {
+  animation: rotate 10s linear infinite;
+  animation-delay: 6.5s;
+}
+
+.sass {
+  animation: rotate 10s linear infinite;
+  animation-delay: 1s;
+}
+
+.js {
+  animation: rotate 10s linear infinite;
+  animation-delay: 6s;
+}
+
+.react {
+  animation: rotate 10s linear infinite;
+  animation-delay: 1.5s;
+}
+
+.next {
+  animation: rotate 10s linear infinite;
+  animation-delay: 5.5s;
+}
+
+.node {
+  animation: rotate 10s linear infinite;
+  animation-delay: 2s;
+}
+
+.mongo {
+  animation: rotate 10s linear infinite;
+  animation-delay: 5s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+
+  position: absolute;
+
+  width: 100vw;
+  height: 100vw;
+}
+
+.grid-item {
+  background-color: var(--color-dark);
+
+  transition: opacity 3s ease-out 2s;
+}
+
+.grid-item:hover {
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+}
