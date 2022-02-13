@@ -6,10 +6,14 @@
 
   --color-golden: #dcca87;
   --color-black: #0c0c0c;
+  --color-white: #ffffff;
+  --color-grey: #aaaaaa;
+
+  --color-dark: hsl(206, 4%, 6%);
+  --text-gradient: linear-gradient(hsl(206, 4%, 24%), hsl(2006, 4%, 8%));
+
   --color-gray: #545454;
   --color-crimson: #f5efdb;
-  --color-grey: #aaaaaa;
-  --color-white: #ffffff;
 }
 
 * {
@@ -19,9 +23,9 @@
   scroll-behavior: smooth;
 }
 
-html {
+/* html {
   background-color: var(--color-black);
-}
+} */
 
 a {
   color: unset;
