@@ -1,0 +1,50 @@
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-black);
+  min-height: 100vh;
+}
+
+.landing__wrapper {
+  position: relative;
+}
+
+.landing__container {
+  position: relative;
+  z-index: 100;
+
+  background-color: var(--color-black);
+  padding: 1.5rem;
+}
+
+.leftcorner-cut,
+.rightcorner-cut {
+  position: absolute;
+  z-index: 1;
+
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-golden);
+}
+
+.leftcorner-cut {
+  bottom: -0.75rem;
+  left: -0.75rem;
+}
+
+.rightcorner-cut {
+  top: -0.75rem;
+  right: -0.75rem;
+}
+
+@media screen and (max-width: 1150px) {
+}
+
+@media screen and (max-width: 650px) {
+  .leftcorner-cut,
+  .rightcorner-cut {
+    display: none;
+  }
+}
