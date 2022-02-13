@@ -19,22 +19,23 @@
   padding: 1.5rem;
 }
 
-.leftcorner-cut,
-.rightcorner-cut {
+.landing__wrapper::before,
+.landing__wrapper::after {
+  content: "";
   position: absolute;
   z-index: 1;
 
   width: 40px;
   height: 40px;
-  background-color: var(--color-golden);
+  background-color: var(--color-gold);
 }
 
-.leftcorner-cut {
+.landing__wrapper::before {
   bottom: -0.75rem;
   left: -0.75rem;
 }
 
-.rightcorner-cut {
+.landing__wrapper::after {
   top: -0.75rem;
   right: -0.75rem;
 }
@@ -43,8 +44,8 @@
 }
 
 @media screen and (max-width: 650px) {
-  .leftcorner-cut,
-  .rightcorner-cut {
+  .landing__wrapper::before,
+  .landing__wrapper::after {
     display: none;
   }
 }

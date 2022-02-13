@@ -59,7 +59,7 @@
 .navbar__vertical-dash {
   width: 1px;
   height: 80%;
-  background-color: var(--color-golden);
+  background-color: var(--color-gold);
 }
 
 /* Sidebar styles */
@@ -72,7 +72,7 @@
 }
 
 .sidebar-logo {
-  color: var(--color-golden);
+  color: var(--color-gold);
   font-size: 6rem;
 }
 
@@ -120,7 +120,7 @@
 }
 
 .navbar__medium-logo {
-  color: var(--color-golden);
+  color: var(--color-gold);
   font-size: 4rem;
   margin-left: 1rem;
 }
@@ -142,7 +142,7 @@
 
 .navbar__medium-links li:hover {
   opacity: 1;
-  color: var(--color-golden);
+  color: var(--color-gold);
 }
 
 /* Navbar small screen styles */
@@ -165,7 +165,7 @@
   position: fixed;
 
   font-size: 4rem;
-  color: var(--color-golden);
+  color: var(--color-gold);
   padding: 1rem 2rem;
   cursor: pointer;
 }
@@ -192,7 +192,7 @@
   top: 1rem;
   left: 2rem;
 
-  color: var(--color-golden);
+  color: var(--color-gold);
   font-size: 4rem;
   cursor: pointer;
 }
@@ -201,7 +201,7 @@
   font-size: 3rem;
   font-family: var(--roboto-font);
   font-weight: bold;
-  color: var(--color-golden);
+  color: var(--color-gold);
   letter-spacing: 0.04em;
   line-height: 1.5;
   margin: 2rem;

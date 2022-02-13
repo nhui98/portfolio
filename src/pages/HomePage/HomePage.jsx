@@ -5,10 +5,10 @@ import About from "./Sections/About";
 import Skills from "./Sections/Skills";
 
 const HomePage = () => (
-  <div className="homepage">
+  <div className="homepage" style={{minWidth: "300px"}}>
     <Landing />
     <About />
-    {/* <Skills /> */}
+    <Skills />
   </div>
 )
 

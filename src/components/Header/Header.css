@@ -1,6 +1,7 @@
 .header {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .header__subtitle {
@@ -19,15 +20,24 @@
 .header__title {
   font-size: 4rem;
   font-family: var(--roboto-font);
-  color: var(--color-golden);
+  color: var(--color-gold);
   padding: 1rem;
   letter-spacing: 0.01em;
   line-height: 1.5;
 }
 
 @media screen and (max-width: 1150px) {
+  .header {
+    text-align: center;
+    align-items: center;
+  }
+
   .header__subtitle {
     font-size: 1.25rem;
+  }
+
+  .header svg {
+    margin-left: 0;
   }
 
   .header__title {
@@ -37,16 +47,4 @@
 }
 
 @media screen and (max-width: 650px) {
-  .header {
-    text-align: center;
-    align-items: center;
-  }
-
-  .header svg {
-    margin-left: 0;
-  }
-
-  .header__title {
-    text-align: center;
-  }
 }
