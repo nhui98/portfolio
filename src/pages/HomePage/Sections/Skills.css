@@ -17,6 +17,8 @@
 .skills__container-row {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+
   width: 100%;
 }
 
@@ -32,42 +34,42 @@
 }
 
 .html {
-  animation: rotate 10s linear infinite;
+  animation: rotate 15s linear infinite;
   animation-delay: 0.5s;
 }
 
 .css {
-  animation: rotate 10s linear infinite;
+  animation: rotate 15s linear infinite;
   animation-delay: 6.5s;
 }
 
 .sass {
-  animation: rotate 10s linear infinite;
+  animation: rotate 15s linear infinite;
   animation-delay: 1s;
 }
 
 .js {
-  animation: rotate 10s linear infinite;
+  animation: rotate 15s linear infinite;
   animation-delay: 6s;
 }
 
 .react {
-  animation: rotate 10s linear infinite;
+  animation: rotate 15s linear infinite;
   animation-delay: 1.5s;
 }
 
 .next {
-  animation: rotate 10s linear infinite;
+  animation: rotate 15s linear infinite;
   animation-delay: 5.5s;
 }
 
 .node {
-  animation: rotate 10s linear infinite;
+  animation: rotate 15s linear infinite;
   animation-delay: 2s;
 }
 
 .mongo {
-  animation: rotate 10s linear infinite;
+  animation: rotate 15s linear infinite;
   animation-delay: 5s;
 }
 
@@ -100,4 +102,40 @@
 .grid-item:hover {
   transition: opacity 0.2s ease-out;
   opacity: 0;
+}
+
+.skills__header {
+  display: none;
+}
+
+@media screen and (max-width: 1150px) {
+  .skills {
+    background-color: var(--color-dark);
+    min-height: 100vh;
+  }
+
+  .grid-container {
+    display: none;
+  }
+
+  .skills__container {
+  }
+
+  .skills__skill svg {
+    color: var(--color-gold);
+    font-size: 8rem;
+    opacity: 0.01;
+    transition: opacity 0.5s;
+  }
+
+  .skills__skill:hover svg {
+    opacity: 1;
+  }
+
+  .skills__header {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 850px) {
 }
