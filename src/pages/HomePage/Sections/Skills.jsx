@@ -46,7 +46,25 @@ const Skills = () => (
         <div className="skills__skill mongo"><SiMongodb /></div>
       </div>
     </div>
+
     <Grid />
+
+    <div className="skills__small">
+      <div className="skills__header">
+          <Header subtitle="My Skills" title="What I Enjoy" />
+      </div>
+      
+      <div className="skills__small-container">
+      <div className="skills__skill"><IoLogoHtml5 /></div>
+        <div className="skills__skill"><IoLogoCss3 /></div>
+        <div className="skills__skill"><SiSass /></div>
+        <div className="skills__skill"><IoLogoJavascript /></div>
+        <div className="skills__skill"><SiReact /></div>
+        <div className="skills__skill"><SiNextdotjs /></div>
+        <div className="skills__skill"><IoLogoNodejs /></div>
+        <div className="skills__skill"><SiMongodb /></div>
+      </div>
+    </div> 
 
   </section>
 )
