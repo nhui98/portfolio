@@ -80,6 +80,10 @@
     flex-direction: column;
     padding: 4rem 6rem;
   }
+
+  .projects__header .header__background-subtitle {
+    font-size: 4rem;
+  }
 }
 
 @media screen and (max-width: 1150px) {
@@ -100,6 +104,10 @@
   .projects__header {
     position: relative;
     min-width: 300px;
+  }
+
+  .projects__header .header__background-subtitle {
+    font-size: 3rem;
   }
 
   .projects__project-wrapper {

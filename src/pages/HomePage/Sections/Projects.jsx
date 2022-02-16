@@ -29,7 +29,7 @@ const Projects = () => {
   return (
     <div className="projects" id="projects">
       <div className="projects__header">
-        <Header subtitle="Portfolio" title="My Projects" />
+        <Header subtitle="Portfolio" title="My Projects" backgroundSubtitle="Portfolio" />
       </div>
       
       <div className="projects__project-wrapper">

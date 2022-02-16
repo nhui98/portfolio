@@ -8,8 +8,7 @@ import "./About.css"
 const About = () => (
   <section className="about" id="about">
     <div className="about__container">
-      <p className="background-subheading">About Me</p>
-      <Header subtitle="About Me" title="My Background" />
+      <Header subtitle="About Me" title="My Background" backgroundSubtitle="About Me" />
       <p className="about__description opensans">
         I'm Nathan, an aspiring Web Developer based in Britian, who's passionate about bringing creativity and problem-solving together to provide stunning and immersive user experiences.
       </p>

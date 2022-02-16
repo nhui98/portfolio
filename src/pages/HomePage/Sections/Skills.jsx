@@ -35,7 +35,7 @@ const Skills = () => (
       <div className="skills__container-row">
         <div className="skills__skill js"><IoLogoJavascript /></div>
         <div className="skills__header">
-          <Header subtitle="My Skills" title="What I Enjoy" />
+          <Header subtitle="My Skills" title="What I Enjoy" backgroundSubtitle="Skills" />
         </div>
         <div className="skills__skill react"><SiReact /></div>
       </div>
@@ -51,7 +51,7 @@ const Skills = () => (
 
     <div className="skills__small">
       <div className="skills__header">
-          <Header subtitle="My Skills" title="What I Enjoy" />
+          <Header subtitle="My Skills" title="What I Enjoy" backgroundSubtitle="Skills" />
       </div>
       
       <div className="skills__small-container">

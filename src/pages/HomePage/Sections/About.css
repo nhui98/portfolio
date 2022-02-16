@@ -20,25 +20,6 @@
   padding-right: 5rem;
 }
 
-.background-subheading {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  font-size: 5rem;
-  font-family: var(--opensans-font);
-  font-weight: bold;
-  letter-spacing: 0.04em;
-  line-height: 5rem;
-
-  width: 100%;
-  background: var(--text-gradient);
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  opacity: 0.2;
-}
-
 .about__description {
   padding: 1rem;
   line-height: 2rem;
@@ -102,13 +83,7 @@
 
   .about__container {
     max-width: 472px;
-    padding: 0;
-  }
-
-  .background-subheading {
-    font-size: 3.5rem;
-    top: -1.5rem;
-    text-align: center;
+    padding: 1.5rem 0;
   }
 
   .about__description {
@@ -125,16 +100,6 @@
   .about {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  }
-
-  .about__container {
-    padding: 1.5rem 0;
-  }
-
-  .background-subheading {
-    font-size: 2.5rem;
-    letter-spacing: 0.02em;
-    top: 0;
   }
 
   .about__img::before,
