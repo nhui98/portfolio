@@ -27,7 +27,7 @@ const Projects = () => {
   })
 
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <div className="projects__header">
         <Header subtitle="Portfolio" title="My Projects" />
       </div>
@@ -53,7 +53,6 @@ const Projects = () => {
           <BsArrowRightShort className={`projects__arrows-icon${imgNumber === 4 ? " disabled" : ""}`}onClick={() => scroll("right")} />
         </div>
       </div>
-
     </div>
   )
 }
