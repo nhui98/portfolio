@@ -7,7 +7,7 @@ import "./App.css"
 
 const App = () => (
   <>
-    <Navbar />
+    {/* <Navbar /> */}
     <HomePage />
   </>
 )
