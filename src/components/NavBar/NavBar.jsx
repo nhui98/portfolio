@@ -36,8 +36,8 @@ const Navbar = () => {
       </div>
 
       <div className="sidebar__social">
-        <a href="/"><HiOutlineMail color="#FFF" /></a>
-        <a href="/"><FaLinkedinIn color="#FFF" /></a>
+        <a href="mailto:hui.nathan9@gmail.com"><HiOutlineMail color="#FFF" /></a>
+        <a href="https://www.linkedin.com/in/nathan-hui"><FaLinkedinIn color="#FFF" /></a>
       </div>
     </aside>
 
