@@ -34,6 +34,34 @@
 
 .projects__project {
   min-width: 1000px;
+  position: relative;
+}
+
+.projects__project-links {
+  position: absolute;
+  display: flex;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects__project-links a {
+  background: var(--color-black);
+  border-radius: 5px;
+  margin: 0 1rem;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+
+.projects__project-links a:hover {
+  opacity: 1;
+}
+
+.projects__project-links svg {
+  font-size: 2.5rem;
+  color: var(--color-white);
 }
 
 .projects__project img {

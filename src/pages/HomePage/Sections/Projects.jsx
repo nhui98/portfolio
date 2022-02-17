@@ -1,6 +1,8 @@
 import React from "react"
 
-import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
+import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
+
+import { AiFillEye, AiFillGithub }from "react-icons/ai"
 
 import Header from "../../../components/Header/Header"
 
@@ -36,22 +38,54 @@ const Projects = () => {
         <div className="projects__project-container" ref={scrollRef}>
           <div className="projects__project">
             <img src={project} alt="project" />
+            <div className="projects__project-links">
+              <a href="https://github.com/nhui98/beats-landing-page">
+                <AiFillGithub />
+              </a>
+              <a href="https://beats-landing-page-eight.vercel.app/">
+                <AiFillEye />
+              </a>
+            </div>
           </div>
           <div className="projects__project">
             <img src={project} alt="project" />
+            <div className="projects__project-links">
+              <a href="https://github.com/nhui98/beats-landing-page">
+                <AiFillGithub />
+              </a>
+              <a href="https://beats-landing-page-eight.vercel.app/">
+                <AiFillEye />
+              </a>
+            </div>
           </div>
           <div className="projects__project">
             <img src={project} alt="project" />
+            <div className="projects__project-links">
+              <a href="https://github.com/nhui98/beats-landing-page">
+                <AiFillGithub />
+              </a>
+              <a href="https://beats-landing-page-eight.vercel.app/">
+                <AiFillEye />
+              </a>
+            </div>
           </div>
           <div className="projects__project">
             <img src={project} alt="project" />
+            <div className="projects__project-links">
+              <a href="https://github.com/nhui98/beats-landing-page">
+                <AiFillGithub />
+              </a>
+              <a href="https://beats-landing-page-eight.vercel.app/">
+                <AiFillEye />
+              </a>
+            </div>
           </div>
         </div>
 
         <div className="projects__arrows">
-          <BsArrowLeftShort className={`projects__arrows-icon${imgNumber === 1 ? " disabled" : ""}`} onClick={() => scroll("left")} />
-          <BsArrowRightShort className={`projects__arrows-icon${imgNumber === 4 ? " disabled" : ""}`}onClick={() => scroll("right")} />
-        </div>
+            <BsArrowLeftShort className={`projects__arrows-icon${imgNumber === 1 ? " disabled" : ""}`} onClick={() => scroll("left")} />
+            <BsArrowRightShort className={`projects__arrows-icon${imgNumber === 4 ? " disabled" : ""}`}onClick={() => scroll("right")} />
+          </div>
       </div>
     </div>
   )
