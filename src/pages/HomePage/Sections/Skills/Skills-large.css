@@ -77,6 +77,7 @@
   }
 }
 
+/* Media Queries */
 @media screen and (max-width: 1150px) {
   .skills__skill svg {
     color: var(--color-gold);

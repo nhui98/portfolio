@@ -68,6 +68,7 @@
   right: -1rem;
 }
 
+/* Media Queries */
 @media screen and (max-width: 1600px) {
   .about__img-wrapper {
     justify-content: flex-start;

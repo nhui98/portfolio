@@ -7,6 +7,7 @@
   overflow: hidden;
 }
 
+/* Media Queries */
 @media screen and (max-width: 1150px) {
   .skills {
     background-color: var(--color-dark);

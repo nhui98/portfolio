@@ -2,6 +2,7 @@
   display: none;
 }
 
+/* Media Queries */
 @media screen and (max-width: 850px) {
   .skills__small {
     display: flex;

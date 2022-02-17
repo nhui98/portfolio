@@ -43,7 +43,8 @@ const Projects = () => {
         </div>
 
         <div className="projects__arrows">
-          <BsArrowLeftShort className={`projects__arrows-icon${imgNumber === 0 ? " disabled" : ""}`} onClick={() => scroll("left")} />         
+          <BsArrowLeftShort className={`projects__arrows-icon${imgNumber === 0 ? " disabled" : ""}`} onClick={() => scroll("left")} />   
+          
           <div className="projects__project-links">
             <a href={PROJECT_DATA[imgNumber].githubLink} rel="noreferrer" target="_blank">
               <AiFillGithub />
@@ -52,6 +53,7 @@ const Projects = () => {
               <AiFillEye />
             </a>
           </div>        
+          
           <BsArrowRightShort className={`projects__arrows-icon${imgNumber === 3 ? " disabled" : ""}`}onClick={() => scroll("right")} />
         </div>
       </div>

@@ -31,8 +31,8 @@ const NavBarLarge = () => (
             </div>
 
             <div className="sidebar__social">
-                <a href="mailto:hui.nathan9@gmail.com"><HiOutlineMail color="#FFF" /></a>
-                <a href="https://www.linkedin.com/in/nathan-hui"><FaLinkedinIn color="#FFF" /></a>
+                <a href="mailto:hui.nathan9@gmail.com" rel="noreferrer" target="_blank"><HiOutlineMail color="#FFF" /></a>
+                <a href="https://www.linkedin.com/in/nathan-hui" rel="noreferrer" target="_blank"><FaLinkedinIn color="#FFF" /></a>
             </div>
         </aside>
     </>
