@@ -1,8 +1,8 @@
 import React from "react";
 
-import Header from "../../../components/Header/Header"
+import Header from "./../../../../components/Header/Header"
 
-import me from "../../../assets/me.jpg"
+import me from "./../../../../assets/me.jpg"
 import "./About.css"
 
 const About = () => (

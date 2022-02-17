@@ -1,0 +1,28 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+
+  position: absolute;
+
+  width: 100vw;
+  height: 100vw;
+}
+
+.grid-item {
+  background-color: var(--color-dark);
+
+  transition: opacity 3s ease-out 2s;
+}
+
+.grid-item:hover {
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1150px) {
+  .grid-container {
+    display: none;
+  }
+}

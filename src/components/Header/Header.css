@@ -1,7 +1,8 @@
 .header {
+  position: relative;
+
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
 .header__background-subtitle {
@@ -16,33 +17,37 @@
   line-height: 5rem;
 
   width: 100%;
-  background: var(--text-gradient);
+  opacity: 0.2;
+
   color: transparent;
+  background: var(--text-gradient);
   -webkit-background-clip: text;
   background-clip: text;
-  opacity: 0.2;
 }
 
 .header__subtitle {
   color: var(--color-white);
   font-size: 1.5rem;
   letter-spacing: 0.04em;
+
   padding: 1rem;
 }
 
 .header svg {
-  margin-left: 1.5rem;
-  font-size: 1.5rem;
   color: var(--color-grey);
+  font-size: 1.5rem;
+
+  margin-left: 1.5rem;
 }
 
 .header__title {
+  color: var(--color-gold);
   font-size: 4rem;
   font-family: var(--roboto-font);
-  color: var(--color-gold);
-  padding: 1rem;
   letter-spacing: 0.01em;
   line-height: 1.5;
+
+  padding: 1rem;
 }
 
 @media screen and (max-width: 1150px) {
@@ -63,7 +68,4 @@
     font-size: 3rem;
     padding: 0.75rem;
   }
-}
-
-@media screen and (max-width: 650px) {
 }

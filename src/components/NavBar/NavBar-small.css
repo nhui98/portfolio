@@ -1,0 +1,97 @@
+/* Navbar small screen styles */
+.navbar__small {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+
+  width: 100%;
+  height: 117px;
+  background-color: rgba(12, 12, 12, 0);
+  transition: background-color 0.5s;
+}
+
+.navbar__small:hover {
+  background-color: rgba(12, 12, 12, 0.8);
+}
+
+.navbar__small-logo {
+  position: fixed;
+
+  font-size: 4rem;
+  color: var(--color-gold);
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.navbar__small-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-black);
+  opacity: 0.99;
+  transition: 0.5s ease;
+}
+
+.navbar__small-close {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+
+  color: var(--color-gold);
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.navbar__small-links li {
+  font-size: 3rem;
+  font-family: var(--roboto-font);
+  font-weight: bold;
+  color: var(--color-gold);
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  margin: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  transition: color 0.5s;
+}
+
+.navbar__small-links li:hover {
+  color: var(--color-white);
+}
+
+/*  Media Queries */
+@media screen and (max-width: 1150px) {
+  .navbar__small {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .navbar__small {
+    height: 96px;
+  }
+
+  .navbar__small-logo {
+    font-size: 3rem;
+    padding: 1rem 2rem;
+  }
+
+  .navbar__small-close {
+    top: 1rem;
+    left: 2rem;
+
+    font-size: 3rem;
+  }
+
+  .navbar__small-links li {
+    font-size: 2.5rem;
+  }
+}

@@ -4,7 +4,7 @@ import { RiCodeSSlashLine } from "react-icons/ri"
 
 import "./Header.css"
 
-const Header = (props) => (
+const Header = props => (
   <div className="header">
     {props.backgroundSubtitle && (
       <div className="header__background-subtitle">{props.backgroundSubtitle}</div>    

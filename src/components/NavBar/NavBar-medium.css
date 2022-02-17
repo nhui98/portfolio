@@ -1,0 +1,56 @@
+/* Navbar medium screen styles */
+.navbar__medium {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(12, 12, 12, 0);
+  transition: background-color 0.5s;
+}
+
+.navbar__medium:hover {
+  background-color: rgba(12, 12, 12, 0.8);
+}
+
+.navbar__medium-logo {
+  color: var(--color-gold);
+  font-size: 4rem;
+  margin-left: 1rem;
+}
+
+.navbar__medium-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.navbar__medium-links li {
+  font-size: 1.25rem;
+  padding: 0 2rem;
+  opacity: 0.25;
+  transition: all 0.5s;
+}
+
+.navbar__medium-links li:hover {
+  opacity: 1;
+  color: var(--color-gold);
+}
+
+/*  Media Queries */
+@media screen and (max-width: 1500px) {
+  .navbar__medium {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .navbar__medium {
+    display: none;
+  }
+}

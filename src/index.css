@@ -23,10 +23,6 @@
   scroll-behavior: smooth;
 }
 
-/* html {
-  background-color: var(--color-black);
-} */
-
 a {
   color: unset;
   text-decoration: none;

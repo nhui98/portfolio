@@ -1,0 +1,40 @@
+.skills__small {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .skills__small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .skills__small-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skills__small-skill {
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+
+  .skills__small-skill svg {
+    color: var(--color-gold);
+    font-size: 8rem;
+    opacity: 0.1;
+    transition: opacity 0.5s;
+  }
+
+  .skills__small-skill:hover svg {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .skills__small-skill svg {
+    font-size: 6rem;
+  }
+}

@@ -1,0 +1,15 @@
+.skills {
+  position: relative;
+  display: grid;
+
+  min-height: 70vw;
+  background-color: var(--color-gold);
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1150px) {
+  .skills {
+    background-color: var(--color-dark);
+    min-height: 100vh;
+  }
+}
