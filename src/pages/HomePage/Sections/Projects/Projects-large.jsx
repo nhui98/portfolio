@@ -11,17 +11,19 @@ import { PROJECT_DATA } from "./../../../../data/project-data"
 const ProjectsLarge = () => {
     const [imgNumber, setImgNumber] = React.useState(0)
     const scrollRef = React.useRef(null);
+    const imgRef = React.useRef(null);
   
     const scroll = ( direction => {
       const { current } = scrollRef;
-      const scrollAmount = current.clientWidth;
+      const scrollAmount2 = imgRef.current.clientWidth;
+    
   
       if (direction === "left" && imgNumber > 0) {
-        current.scrollLeft -= scrollAmount;
+        current.scrollLeft -= scrollAmount2;
         setImgNumber(prev => prev - 1)
       }
       if (direction === "right" && imgNumber < PROJECT_DATA.length - 1) {
-        current.scrollLeft += scrollAmount;
+        current.scrollLeft += scrollAmount2;
         setImgNumber(prev => prev + 1)
       }
     })
@@ -31,7 +33,7 @@ const ProjectsLarge = () => {
             <div className="projects__project-container" ref={scrollRef}>
                 {PROJECT_DATA.map((project, i, projects) => (
                     <div className="projects__project" key={`${project.name}-${i}`}>
-                    <img src={project.src} alt={project.name} />
+                        <img ref={imgRef} src={project.src} alt={project.name} />
                     </div>
                 ))}
             </div>
